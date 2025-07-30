@@ -2,8 +2,9 @@ import streamlit as st
 
 st.title("An Interactive Guide for MTG Turn Order")
 
-st.write("To see more ifno on a step or phase you can click on it to expand it")
 st.write('Disclaimer: "Benée’s MTGTURNORDER" is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.')
+st.write("To see more info on a step or phase you can click on it to expand it")
+
 with st.expander("**501. Beginning Phase**", expanded=True):
     with st.expander("**502. Untap Step**"):
         st.write("**You untap all your tapped permanents. On the first turn of the game, you don’t have any permanents, so you just skip this step. No one can cast spells or activate abilities during this step**")
