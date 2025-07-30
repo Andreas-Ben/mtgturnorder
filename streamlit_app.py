@@ -1,5 +1,7 @@
 import streamlit as st
 
+
+st.set_page_config(page_title="MTG Turn Order", page_icon=":chart_with_upwards_trend:", layout="centered")
 st.title("An Interactive Guide for MTG Turn Order")
 
 st.write('Disclaimer: "Benée’s MTGTURNORDER" is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.')
