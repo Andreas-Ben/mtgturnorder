@@ -1,6 +1,5 @@
 import streamlit as st
-
-
+from streamlit_extras.bottom_container import bottom
 st.set_page_config(page_title="MTG Turn Order", page_icon=":chart_with_upwards_trend:", layout="centered")
 st.title("An Interactive Guide for MTG Turn Order")
 
@@ -32,7 +31,7 @@ with st.expander("**501. Beginning Phase**", expanded=True):
         #st.write("")
 
 with st.expander("**505.1 Precombat Mainphase**"):
-    st.write("**You can cast any number of sorceries, instants, creatures, artifacts, enchantments, and planeswalkers, and you can activate abilities. You can play a land during this phase, but remember that you can play only one land during your turn. Your opponent can cast instants and activate abilities.**")
+    st.write("You can cast any number of sorceries, instants, creatures, artifacts, enchantments, and planeswalkers, and you can activate abilities. You can play a land during this phase, but remember that you can play only one land during your turn. Your opponent can cast instants and activate abilities.")
     with st.expander("Put lore counters on Saga enchantments"):
         st.write("505.4. If the active player controls one or more Saga enchantments and it’s the active player’s precombat main phase, the active player puts a lore counter on each Saga they control. (See rule 714, “Saga Cards.”) This turn-based action doesn’t use the stack.")
     with st.expander("Player gets priority"):
@@ -108,3 +107,5 @@ with st.expander("**512. Ending Phase**", expanded=True):
             st.write("514.3a At this point, the game checks to see if any state-based actions would be performed and/or any triggered abilities are waiting to be put onto the stack (including those that trigger “at the beginning of the next cleanup step”). If so, those state-based actions are performed, then those triggered abilities are put on the stack, then the active player gets priority. Players may cast spells and activate abilities. Once the stack is empty and all players pass in succession, another cleanup step begins.")
         with st.expander("Only if abilities have triggered: Player gets priority"):
             st.write("514.3. Normally, no player receives priority during the cleanup step, so no spells can be cast and no abilities can be activated. However, this rule is subject to the following exception:")
+
+
